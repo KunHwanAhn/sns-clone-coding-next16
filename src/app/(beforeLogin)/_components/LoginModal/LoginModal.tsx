@@ -1,32 +1,36 @@
 "use client";
 
-import { ChangeEventHandler, MouseEventHandler, useState } from "react";
+import { ChangeEventHandler, MouseEventHandler, SubmitEventHandler, useState } from "react";
+import { useRouter } from "next/navigation";
+
+import IconClose from "../IconClose";
 
 import styles from "./LoginModal.module.css";
 
 export default function LoginModal() {
-  const [id, setId] = useState();
-  const [password, setPassword] = useState();
-  const [message, setMessage] = useState();
-  const onSubmit = () => {};
-  const handleCloseClick: MouseEventHandler<HTMLButtonElement> = () => {};
+  const [id, setId] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const [message, setMessage] = useState<string>('');
+
+  const router = useRouter();
+
+  const handleCloseClick: MouseEventHandler<HTMLButtonElement> = () => {
+    router.back();
+    // TODO: 뒤로가기가 /home이 아니면 /home으로 보내기
+  }
 
   const handleIdChange: ChangeEventHandler<HTMLInputElement, HTMLInputElement> = () => {};
 
   const handlePasswordChange: ChangeEventHandler<HTMLInputElement, HTMLInputElement> = () => {};
+
+  const onSubmit: SubmitEventHandler<HTMLFormElement> = () => {};
 
   return (
     <div className={styles.modalBackground}>
       <div className={styles.modal}>
         <div className={styles.modalHeader}>
           <button className={styles.closeButton} onClick={handleCloseClick}>
-            <svg width={24} viewBox="0 0 24 24" aria-hidden="true">
-              <g>
-                <path
-                  fill="var(--text-primary)"
-                  d="M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z"></path>
-              </g>
-            </svg>
+            <IconClose />
           </button>
           <div>로그인하세요.</div>
         </div>
