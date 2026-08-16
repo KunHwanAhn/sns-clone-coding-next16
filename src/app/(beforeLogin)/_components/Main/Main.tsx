@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "./Main.module.css";
+import styles from "./Main.module.scss";
 
 const Main = () => {
   return (

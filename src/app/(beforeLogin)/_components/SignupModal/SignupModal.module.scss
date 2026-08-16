@@ -21,18 +21,18 @@
   display: flex;
   flex-direction: column;
   height: 550px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
 }
 
 .modalHeader {
   padding: 36px 80px 20px;
   font-size: 31px;
   font-weight: bold;
-}
-
-.modal form {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
 }
 
 .modalBody {
@@ -59,9 +59,10 @@
   padding: 8px 8px 0;
   color: var(--text-secondary);
   user-select: none;
-}
-.inputLabel:focus-within {
-  color: red;
+
+  &:focus-within {
+    color: red;
+  }
 }
 .input {
   width: 100%;
@@ -84,13 +85,15 @@
   background-color: var(--body-foreground);
   color: var(--body-background);
   font-size: 17px;
-}
-.actionButton:disabled {
-  color: var(--text-secondary);
-  opacity: 0.5;
-}
-.actionButton:hover {
-  background-color: var(--button-secondary-hover);
+
+  &:disabled {
+    color: var(--text-secondary);
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: var(--button-secondary-hover);
+  }
 }
 
 .closeButton {
@@ -107,8 +110,8 @@
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-in-out;
-}
-.closeButton:hover {
-  background-color: var(--button-secondary-hover);
-}
 
+  &:hover {
+    background-color: var(--button-secondary-hover);
+  }
+}

@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 import IconClose from "../IconClose";
 
-import styles from "./SignupModal.module.css";
+import styles from "./SignupModal.module.scss";
 
 const SignupModal = () => {
   const [id, setId] = useState<string>('');

@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 import IconClose from "../IconClose";
 
-import styles from "./LoginModal.module.css";
+import styles from "./LoginModal.module.scss";
 
 export default function LoginModal() {
   const [id, setId] = useState<string>('');
