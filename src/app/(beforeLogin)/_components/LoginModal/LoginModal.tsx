@@ -2,9 +2,9 @@
 
 import { ChangeEventHandler, MouseEventHandler, useState } from "react";
 
-import styles from "./login-modal.module.css";
+import styles from "./LoginModal.module.css";
 
-export default function LoginModalPage() {
+export default function LoginModal() {
   const [id, setId] = useState();
   const [password, setPassword] = useState();
   const [message, setMessage] = useState();
