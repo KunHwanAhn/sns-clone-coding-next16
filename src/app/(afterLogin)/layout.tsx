@@ -7,7 +7,7 @@ import LogoutButton from "./_components/LogoutButton";
 import FollwRecommendSection from "./_components/FollowRecommendSection";
 import TrendSection from "./_components/TrendSection";
 
-const AfterLoginLayout = ({ children }: LayoutProps<"/home">) => {
+const AfterLoginLayout = ({ children }: LayoutProps<"/">) => {
   return (
     <div className={styles.container}>
       <header className={styles.leftSectionWrapper}>
