@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-geist-sans);
   background-color: var(--background);
 }
 
@@ -56,7 +55,7 @@
     padding: 0 16px;
     font-size: 15px;
     background-color: rgb(29, 155, 240);
-    color: var(--text-primary);
+    color: white;
     border: none;
     display: flex;
     align-items: center;
