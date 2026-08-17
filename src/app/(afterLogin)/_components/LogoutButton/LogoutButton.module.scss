@@ -9,6 +9,7 @@
   align-items: center;
   text-align: left;
   border-radius: 33px;
+  background-color: var(--background);
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
