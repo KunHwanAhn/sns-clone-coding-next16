@@ -13,8 +13,8 @@ dayjs.extend(relativeTime);
 const Post = () => {
   const target = {
     user: {
-      id: 'elonmusk',
-      nickname: 'Elon Musk',
+      id: 'user123',
+      nickname: 'User123',
       image: '/yRsRRjGO.jpg',
     },
     content: '클론코딩 라이브로 하니 너무 힘들어요 ㅠㅠ',

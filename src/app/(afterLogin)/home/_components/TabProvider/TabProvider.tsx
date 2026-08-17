@@ -1,22 +1,22 @@
 "use client";
 
 import { createContext, PropsWithChildren, useState } from "react";
-import { TAB_TYPE, TabType } from "../../_constatns";
+import { HOME_TAB_TYPE, HomeTabType } from "../../_constants";
 
 export interface TabContext {
-  tab: TabType,
-  setTab: (tab: TabType) => void;
+  tab: HomeTabType,
+  setTab: (tab: HomeTabType) => void;
 }
 
 export const TabContext = createContext<TabContext>({
-  tab: TAB_TYPE.RECOMMEND,
+  tab: HOME_TAB_TYPE.RECOMMEND,
   setTab: () => {},
 });
 
 interface TabProviderProps extends PropsWithChildren {}
 
 const TabProvider = ({ children }: TabProviderProps) => {
-  const [tab, setTab] = useState<TabType>(TAB_TYPE.RECOMMEND);
+  const [tab, setTab] = useState<HomeTabType>(HOME_TAB_TYPE.RECOMMEND);
 
   return (
     <TabContext.Provider value={{tab, setTab}}>

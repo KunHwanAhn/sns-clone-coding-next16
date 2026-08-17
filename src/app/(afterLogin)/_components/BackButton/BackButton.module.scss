@@ -1,0 +1,17 @@
+.backButton {
+  width: 34px;
+  height: 34px;
+  color: var(--text-primary);
+  background: var(--background);
+  border: none;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--button-secondary-hover);
+  }
+}
