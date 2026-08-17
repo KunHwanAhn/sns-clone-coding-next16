@@ -3,7 +3,7 @@
 import { ChangeEventHandler, MouseEventHandler, SubmitEventHandler, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import IconClose from "../IconClose";
+import IconClose from "@/app/_components/IconClose";
 
 import styles from "./LoginModal.module.scss";
 
