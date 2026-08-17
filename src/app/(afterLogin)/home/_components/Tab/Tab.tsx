@@ -2,10 +2,10 @@
 
 import { MouseEventHandler, useContext, useState } from "react"
 
-import { TAB_TYPE, TabType } from "../../_constatns";
+import { TAB_TYPE } from "../../_constatns";
 
 import style from "./Tab.module.scss"
-import { TabContext } from "../TabProvider/TabProvider";
+import { TabContext } from "../TabProvider";
 
 const Tab = () => {
   const { tab, setTab } = useContext(TabContext);

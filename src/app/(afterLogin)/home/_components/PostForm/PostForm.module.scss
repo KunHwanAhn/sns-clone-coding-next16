@@ -1,0 +1,94 @@
+.postUserSection {
+  margin-right: 12px;
+  width: 40px;
+}
+
+.postUserImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+}
+
+.postForm {
+  margin-top: 101px;
+  display: flex;
+  padding: 16px 16px 8px;
+  border-color: var(--button-secondary-border);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+  textarea {
+    width: 100%;
+    border: none;
+    padding: 12px 0;
+    font-size: 20px;
+    line-height: 24px;
+    outline: none;
+    background-color: var(--background);
+
+    &::placeholder {
+      font-family: Malgun Gothic;
+    }
+  }
+}
+
+.postInputSection {
+  flex: 1;
+}
+
+.postButtonSection {
+  width: 100%;
+}
+
+.footerButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footerButtonLeft {
+  flex: 1;
+}
+
+.uploadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  cursor: pointer;
+  border-radius: 17px;
+  background-color: var(--background);
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--button-secondary-hover);
+  }
+}
+
+.actionButton {
+  width: 94px;
+  height: 36px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 18px;
+  background-color: var(--button-blue);
+  transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: var(--button-blue-hover);
+  }
+}
