@@ -54,7 +54,7 @@
     border-radius: 20px;
     padding: 0 16px;
     font-size: 15px;
-    background-color: rgb(29, 155, 240);
+    background-color: var(--button-blue);
     color: white;
     border: none;
     display: flex;
@@ -63,7 +63,7 @@
     transition: all 0.2s ease-in-out;
 
   &:hover {
-    background-color: rgb(26, 140, 216);
+    background-color: var(--button-blue-hover);
   }
 }
 
@@ -74,7 +74,7 @@
     padding: 0 16px;
     font-size: 15px;
     color: var(--text-primary);
-    border: 1px solid rgb(207, 217, 222);
+    border: 1px solid #cfd9de;
     display: flex;
     align-items: center;
     justify-content: center;
