@@ -88,7 +88,7 @@
   font-size: 17px;
   cursor: pointer;
   border: none;
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 
   &:disabled {
     color: var(--text-secondary);
@@ -113,7 +113,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 
   &:hover {
     background-color: var(--button-secondary-hover);

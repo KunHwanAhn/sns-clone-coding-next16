@@ -1,0 +1,18 @@
+.navPill {
+  display: inline-flex;
+  height: 50px;
+  padding: 12px;
+  align-items: center;
+  border-radius: 29px;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--button-secondary-hover);
+  }
+}
+
+.navPill > div {
+  margin-left: 20px;
+  margin-right: 16px;
+  font-size: 20px;
+}

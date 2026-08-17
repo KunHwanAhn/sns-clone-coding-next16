@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from './Layout.module.scss';
+import NavMenu from "./_components/NavMenu";
+import LogoutButton from "./_components/LogoutButton";
 
 const AfterLoginLayout = ({ children }: LayoutProps<"/home">) => {
   return (
@@ -16,9 +18,11 @@ const AfterLoginLayout = ({ children }: LayoutProps<"/home">) => {
             </Link>
             <nav>
               <ul>
+                <NavMenu />
               </ul>
               <Link href="/compose/tweet" className={styles.postButton}>게시하기</Link>
             </nav>
+            <LogoutButton />
           </div>
         </section>
       </header>
