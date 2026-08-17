@@ -1,0 +1,27 @@
+.search {
+  position: fixed;
+  height: 44px;
+  width: inherit;
+  border-radius: 21px;
+  border: 1px solid #cfd9de;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  background-color: var(--background);
+}
+
+.search {
+  svg {
+    margin-left: 20px;
+  }
+
+  input {
+    outline: none;
+    background-color: inherit;
+    border: none;
+    padding: 12px;
+    margin-left: 5px;
+    font-size: 15px;
+  }
+}
